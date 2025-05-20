@@ -7,6 +7,22 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
 
 Este projeto pode ser utilizado como modelo para sistemas de gestão financeira corporativa.
 
+
+
+## Funcionalidades
+
+-  Cadastro de clientes (Pessoa Física e Jurídica)
+-  Cadastro e validação de documentos (CPF e CNPJ)
+-  Cadastro de movimentações financeiras (receitas e despesas)
+-  Geração de relatórios:
+  - Relatório de saldo por cliente
+  - Relatório de total de receitas
+-  Validação de dados de entrada com mensagens internacionalizadas
+-  Execução de procedures e functions em PL/SQL
+-  Camadas bem definidas: DTOs, Services, Repositories, Controllers
+-  Testes com JUnit 5 e Mockito
+
+
 Tecnologias Utilizadas
 
     Java 8
@@ -36,15 +52,3 @@ Requisitos
     Oracle Database (ou H2 para testes)
 
 
-## Funcionalidades
-
--  Cadastro de clientes (Pessoa Física e Jurídica)
--  Cadastro e validação de documentos (CPF e CNPJ)
--  Cadastro de movimentações financeiras (receitas e despesas)
--  Geração de relatórios:
-  - Relatório de saldo por cliente
-  - Relatório de total de receitas
--  Validação de dados de entrada com mensagens internacionalizadas
--  Execução de procedures e functions em PL/SQL
--  Camadas bem definidas: DTOs, Services, Repositories, Controllers
--  Testes com JUnit 5 e Mockito
