@@ -5,7 +5,7 @@
 O Projeto **XPTO** é uma aplicação corporativa desenvolvida em **Java 8** com **Spring Boot** e banco de dados **Oracle**, que simula o controle de **receitas** e **despesas** de clientes.
 O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações bancárias e geração de relatórios financeiros como saldo consolidado e total de receitas.
 
-Este projeto pode ser utilizado como modelo para sistemas de gestão financeira corporativa, controle contábil ou backoffices de fintechs.
+Este projeto pode ser utilizado como modelo para sistemas de gestão financeira corporativa.
 
 Tecnologias Utilizadas
 
