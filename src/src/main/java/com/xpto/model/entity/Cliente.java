@@ -1,6 +1,8 @@
 package com.xpto.model.entity;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)

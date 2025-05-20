@@ -2,7 +2,6 @@ package com.xpto.model.entity;
 
 import jakarta.persistence.Embeddable;
 
-@Embeddable
 public class Endereco {
 
     private String rua;
