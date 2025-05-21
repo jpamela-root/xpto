@@ -38,14 +38,27 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
    git clone https://github.com/jpamela-root/xpto.git
 
 2. Navegue até o diretório do projeto:
-  ```bash
+
    cd xpto
 
 3. Configure o banco de dados Oracle e atualize as credenciais no arquivo application.properties.
 
 Execute a aplicação:
- ```bash
+
 ./mvnw spring-boot:run
 
 4. Configure seu application.properties com as credenciais do banco Oracle:
  ```bash
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=SEU_USUARIO
+spring.datasource.password=SUA_SENHA
+spring.jpa.hibernate.ddl-auto=update
+
+- Compile e execute o projeto:
+
+./mvnw spring-boot:run
+
+- Acesse a aplicação:
+
+http://localhost:8080
+
