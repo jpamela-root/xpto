@@ -32,4 +32,14 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
    ```bash
    git clone https://github.com/jpamela-root/xpto.git
 
+2. Navegue até o diretório do projeto:
+ 
+ cd xpto
+
+3. Configure o banco de dados Oracle e atualize as credenciais no arquivo application.properties.
+
+Execute a aplicação:
+
+./mvnw spring-boot:run
+
 
