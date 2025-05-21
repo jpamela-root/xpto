@@ -22,9 +22,14 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
 
 - Java 8
 - Spring Boot
+- Spring Web
+- Spring Data JPA
 - Oracle Database
+- Maven
 - JUnit 5
 - Mockito
+- Maven 3.8+
+- Banco Oracle (instância local ou remota)
 
 ## Instalação
 
@@ -33,13 +38,14 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
    git clone https://github.com/jpamela-root/xpto.git
 
 2. Navegue até o diretório do projeto:
- 
- cd xpto
+  ```bash
+   cd xpto
 
 3. Configure o banco de dados Oracle e atualize as credenciais no arquivo application.properties.
 
 Execute a aplicação:
-
+ ```bash
 ./mvnw spring-boot:run
 
-
+4. Configure seu application.properties com as credenciais do banco Oracle:
+ ```bash
