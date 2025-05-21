@@ -17,6 +17,9 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
 - Execução de procedures e functions em PL/SQL
 - Arquitetura em camadas: DTOs, Services, Repositories, Controllers
 - Testes com JUnit 5 e Mockito
+- Integração com Oracle via chamada de função PL/SQL (`fn_saldo_total_cliente`)
+- Endpoint: `GET /api/saldo/{idCliente}` retorna o saldo total do cliente com base nas movimentações
+
 
 ## Tecnologias Utilizadas
 
@@ -25,11 +28,50 @@ O sistema permite o cadastro de pessoas físicas e jurídicas, movimentações b
 - Spring Web
 - Spring Data JPA
 - Oracle Database
+- JDBC + JdbcTemplate
 - Maven
 - JUnit 5
 - Mockito
 - Maven 3.8+
 - Banco Oracle (instância local ou remota)
+- Postman (para testes de API)
+
+##Testes de API
+
+Você pode testar os endpoints usando o Postman ou Insomnia.
+ Clientes
+
+    GET /api/clientes
+
+    GET /api/clientes/{id}
+
+    POST /api/clientes
+
+    PUT /api/clientes/{id}
+
+    DELETE /api/clientes/{id}
+
+ Movimentações
+
+    GET /api/movimentacoes
+
+    GET /api/movimentacoes/cliente/{idCliente}
+
+    POST /api/movimentacoes
+
+    DELETE /api/movimentacoes/{id}
+
+Saldo do Cliente (via função PL/SQL)
+
+    GET /api/saldo/{idCliente}
+    → Retorna o saldo total (somatório das receitas e despesas) de um cliente específico utilizando uma função no banco Oracle.
+
+##Scripts SQL
+
+Os objetos PL/SQL utilizados estão localizados em:
+
+  src/main/resources/db/scripts-plsql.sql
+
 
 ## Instalação
 
